@@ -1,8 +1,8 @@
 # Angular-Spring-Boot-Project
 
-<h2>Tools and technologies used</h2>
+<h2>Tools and technologies</h2>
 <hr />
-<br/>
+
 <h3>Front end technologies</h3>
 <ul>
   <li>Angular 10.0.8</li>
@@ -12,7 +12,7 @@
   <li>Tools</li>
   <li>Maven - 4.0.0</li>
 </ul>
-
+<br/>
 <h3>Server-side technologies</h3>
 <ul>
   <li>Spring Boot - 2.3.3.RELEASE</li>
