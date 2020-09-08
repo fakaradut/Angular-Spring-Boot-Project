@@ -1,0 +1,19 @@
+<div class="customize-nav">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <nav>
+      <a class="navbar-brand" [routerLink]="adresHome" routerLinkActive="active">Angular Spring Boot Project</a>
+    </nav>
+    </div>
+    <ul class="nav navbar-nav">
+      <nav>
+      <li class="active"><a [routerLink]="adresHome"routerLinkActive="active">Home</a></li>
+      <li><a [routerLink]= "adresProduct" routerLinkActive="active">List Products</a></li>
+      <li><a [routerLink]= "adresCreate" routerLinkActive="active">Add Product</a></li>
+      <li><a [routerLink]= "adresCustomer" routerLinkActive="active">Account Settings</a></li>
+   </nav>
+    </ul>
+  </div>
+</nav>
+</div>

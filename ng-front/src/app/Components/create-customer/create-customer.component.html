@@ -1,0 +1,60 @@
+<h2>Create User</h2>
+<div [hidden]="submit">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+        [(ngModel)]="customer.name"
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        placeholder="name"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="surname">Surname</label>
+      <input
+        [(ngModel)]="customer.surname"
+        type="text"
+        class="form-control"
+        id="surname"
+        name="surname"
+        placeholder="surname"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input
+        [(ngModel)]="customer.username"
+        type="text"
+        class="form-control"
+        id="username"
+        required
+        [(ngModel)]="customer.username"
+        name="username"
+        placeholder="Username"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        [(ngModel)]="customer.password"
+        type="password"
+        class="form-control"
+        id="password"
+        name="password"
+        placeholder="Password"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submit">
+  <h3 name="submitted">Submitted</h3>
+</div>

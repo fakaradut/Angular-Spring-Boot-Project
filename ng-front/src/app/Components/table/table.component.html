@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+
+<div class="container"  >
+  <h2>Product List</h2>
+
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Number</th>
+        <td>Options</td>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let product of products$ | async">
+        <td>{{ product.productName }}</td>
+        <td>{{ product.productNumber }}</td>
+        <td>
+          <button (click)="deleteProduct(product.id)" class="btn btn-danger">Delete</button>
+          <button (click)="updateProduct(product.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
